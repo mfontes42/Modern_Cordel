@@ -46,7 +46,7 @@ main  p {
     font-family: 'Sriracha', sans-serif;
     padding-left: 15px;
     font-size: 3vw;
-    line-height: 6vw;
+    line-height: 5vw;
 }
 
 section {
@@ -57,52 +57,37 @@ section {
 section > p {
     padding-bottom: 2em;
 }
-
 #girassol {
-    min-height: 500px;
-    max-width: 100%;
     background-image: url('../imagens/girassol.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    position: relative;
-}
-
-#girassol > p {
-    display: inline-block;
-    font-size: 1.6em;
-    background-color: rgba(22, 21, 21, 0.553);
-    max-width: 350px;
-    position: absolute;
-    left: 5%;
-    top: 15%;
-    color: white;
-    text-shadow: 1px 2px 1px black;
-    padding: 10px;
-    border-radius: 10px;
 }
 
 #livro {
-    height: 500px;
     background-image: url('../imagens/pages.jpg');
-    background-position: center center;
+}
+#girassol, #livro {
+    min-height: 600px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     position: relative;
+    box-shadow: 2px -4px 20px rgba(0, 0, 0, 0.4);
 }
 
-#livro > p {
+#girassol > p, #livro > p {
     display: inline-block;
-    font-size: 1.6em;
-    background-color: rgba(22, 21, 21, 0.533);
-    max-width: 350px;
+    background-color: rgba(22, 21, 21, 0.553);
+    max-width: 500px;
     position: absolute;
     left: 5%;
-    top: 15%;
+    top: 14%;
     color: white;
     text-shadow: 1px 2px 1px black;
     padding: 10px;
-    border-radius: 10px;
-} 
+    font-size: 2em;
+    line-height: 4.5vw;
+}
 
 footer {
     background-color: black;
@@ -117,7 +102,6 @@ footer > a {
     color: white;
     font-family: sans-serif;
     font-weight: bolder;
-    
 }
 
 footer > a:hover {
