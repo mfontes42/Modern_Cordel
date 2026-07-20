@@ -78,10 +78,12 @@ section > p {
 #girassol > p, #livro > p {
     display: inline-block;
     background-color: rgba(22, 21, 21, 0.553);
+    width: 90%;
     max-width: 500px;
+    margin: auto;
     position: absolute;
     left: 5%;
-    top: 14%;
+    top: 15%;
     color: white;
     text-shadow: 1px 2px 1px black;
     padding: 10px;
