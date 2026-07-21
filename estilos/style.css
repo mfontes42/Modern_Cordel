@@ -70,12 +70,21 @@ section > p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     position: relative;
     box-shadow: 2px -4px 20px rgba(0, 0, 0, 0.4);
 }
 
-#girassol > p, #livro > p {
+.parallax {
+    background-attachment: fixed;
+}
+
+@supports (-webkit-touch-callout: none) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+.parallax > p {
     display: inline-block;
     background-color: rgba(22, 21, 21, 0.553);
     width: 90%;
